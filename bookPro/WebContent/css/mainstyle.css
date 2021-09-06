@@ -1,0 +1,38 @@
+*{ margin:0 auto;  padding:0; }
+
+#box{
+	width:100%;
+	height:92vh;
+	line-height:14vh;
+}
+
+#banner{
+	
+}
+
+#banner img{
+	float:left;
+	width:100%;
+	height:30vh;
+}
+
+#cont-left{
+	float:left;
+	width:25%;
+	height:48vh;
+	background:grey;
+}
+#cont-center{
+	float:left;
+	width:50%;
+	height:48vh;
+	background:green;
+	
+}
+#cont-right{
+	float:left;
+	width:25%;
+	height:48vh;
+	background:yellow;
+	
+}

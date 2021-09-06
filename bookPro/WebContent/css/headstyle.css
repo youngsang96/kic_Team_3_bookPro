@@ -1,0 +1,116 @@
+*{ margin:0 auto;  padding:0; }
+a{ text-decoration:none; color:inherit;}
+ul,li{list-style:none;}
+.clearfix::before ,clearfix::after{content:''; display:block; clear:both;}
+
+/*layout*/
+
+#header{background:#dcdcdc; width:100%; height:15vh; position:absolute; }
+#navbar{background:#dcdcdc; width:100%; top : 4.7vh; height:9vh; position:absolute; }
+
+/*header*/
+#header{}
+#header .sitemap{
+	float:right;
+	margin-right:6vw;
+}
+#header .sitemap .li{
+	
+	float:left;
+	padding:0.43vw;
+	font-size:1.1vw;
+	font-weight:bold;
+	width:6vw;
+	height:3vh;
+	text-align:center;
+	background:#c0c0c0;
+	
+}
+
+
+#header .sitemap a{
+	color:black;
+}
+
+#header .sitemap .slash{
+	float:left;
+	padding:0.43vw;
+	height:3vh;
+	font-size:1.1vw;
+	width:2vw;
+	background:#dcdcdc;
+	text-align:center;
+	color:black;
+}
+
+/*navbar*/
+#navbar{
+	
+}
+#navbar .navbar_logo{
+	float: left; 
+	margin-left:2.5vw;
+	font-size:3vw;
+	padding : 0.8rem;
+	font-family:'Black Han Sans', sans-serif;
+	
+}
+	
+#navbar .navbar_logo a{
+	color:black;
+}
+
+#navbar .navbar_menu{
+	float:right;
+	margin-right:2.5vw;
+	font-size:0;
+}
+
+#navbar .navbar_menu .mainmenu{
+	
+	display:inline-block;
+	width:15vw;
+	vertical-align:top;
+	background:#dcdcdc;
+	font-size:1.6vw;
+	font-weight:bold;
+	text-align:center;
+}
+
+#navbar .navbar_menu .mainmenu:hover .content{
+	background:purple;
+	color:white;
+}
+
+#navbar .navbar_menu .mainmenu:hover .submenu {
+	display:block;
+	opacity:1;
+	visibility:visible;
+	
+}
+
+#navbar .navbar_menu .mainmenu a{
+	display:block;
+	padding:2.6vh;
+}
+
+#navbar .navbar_menu .submenu{
+	
+	display:none;
+	background: pink;
+	opacity:0;
+	visibility:hidden;
+	
+}
+
+#navbar .navbar_menu .submenu a{
+	display:block;
+	padding:10px;	
+	font-weight:normal;
+}
+
+#navbar .navbar_menu .submenu a:hover{
+	background:grey;
+	color:red;
+	font-weight:bold;
+}
