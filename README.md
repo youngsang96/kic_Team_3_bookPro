@@ -1,2 +1,2 @@
 # kic_Team_3_bookPro
-Model 2를 이용한 웹 
+Model 2를 이용한 웹 프로그래밍
