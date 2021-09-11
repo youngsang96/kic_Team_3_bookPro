@@ -5,7 +5,7 @@ public class Member {
 	private String pass;
 	private String name;
 	private String birthday;
-	private int gender;
+	private String gender;
 	private String tel;
 	private String email;
 	
@@ -33,10 +33,10 @@ public class Member {
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
-	public int getGender() {
+	public String getGender() {
 		return gender;
 	}
-	public void setGender(int gender) {
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
 	public String getTel() {
