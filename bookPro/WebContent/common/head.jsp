@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,17 +26,30 @@
 		
 		<div class="sitemap">
 			<ul class="clearfix">
-				<li class="li"><a href="<%=request.getContextPath()%>/book/loginForm">회원리스트</a>
+				<c:if test="${login == null }">
+				<li class="li"><a href="<%=request.getContextPath()%>/book/siteMap">사이트맵</a>
 				<li class="slash">|</li>
-				<li class="li"><a href="<%=request.getContextPath()%>/book/loginForm">My library</a>
-				<li class="slash">|</li>
-				<li class="li"><a href="<%=request.getContextPath()%>/book/loginForm">로그아웃</a>
-				<li class="slash">|</li>
-				
-				
 				<li class="li"><a href="<%=request.getContextPath()%>/book/loginForm">로그인</a>
 				<li class="slash">|</li>
 				<li class="li"><a href="<%=request.getContextPath()%>/book/memberInput">회원가입</a>
+				
+				</c:if>
+				
+				<c:if test="${login != null }">
+				
+				<li class="li"><a href="<%=request.getContextPath()%>/book/loginForm">My library</a>
+				<li class="slash">|</li>
+				<li class="li"><a href="<%=request.getContextPath()%>/book/logOut">로그아웃</a>
+				
+				
+				<c:if test="${login eq 'admin' }">
+				<li class="slash">|</li>
+				<li class="li"><a href="<%=request.getContextPath()%>/book/memberList">회원리스트</a>
+				</c:if>
+                </c:if>
+			
+				
+				
 				
 			</ul>
 		</div>

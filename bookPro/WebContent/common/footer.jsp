@@ -8,14 +8,13 @@
 #footer{
 	
 	
-	position:absolute;
-	margin:0;
+	position:fixed;
 	line-height:1vh;
 	bottom:0;
 	width:100%;
 	height:8vh;
 	
-	font-size:1rem;
+	font-size:1vw;
 	background:grey;
 	color:black;
 	text-align : center;
